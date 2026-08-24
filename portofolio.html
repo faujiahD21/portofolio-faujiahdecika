@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faujiah Decika | Portfolio Professional</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            500: '#2563eb',
+                            600: '#1d4ed8',
+                            900: '#0f172a',
+                        },
+                        accent: {
+                            500: '#06b6d4',
+                            600: '#0891b2',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #1d4ed8 0%, #0891b2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Navigation Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200/80 transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="#hero" class="font-serif font-bold text-xl tracking-tight text-slate-900">
+                    FD<span class="text-brand-600">.</span>
+                </a>
+                
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                    <a href="#profile" class="hover:text-brand-600 transition">Profil</a>
+                    <a href="#competencies" class="hover:text-brand-600 transition">Kompetensi</a>
+                    <a href="#experience" class="hover:text-brand-600 transition">Pengalaman</a>
+                    <a href="#projects" class="hover:text-brand-600 transition">Proyek</a>
+                    <a href="#certificates" class="hover:text-brand-600 transition">Sertifikat</a>
+                </nav>
+
+                <div class="flex items-center space-x-3">
+                    <a href="#contact" class="px-4 py-2 text-xs sm:text-sm font-semibold text-white bg-brand-600 hover:bg-brand-700 rounded-full shadow-sm shadow-brand-500/30 transition">
+                        Hubungi Saya
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="pt-32 pb-20 md:pt-40 md:pb-28 bg-gradient-to-b from-slate-100 via-slate-50 to-slate-50 relative overflow-hidden">
+        <div class="absolute -top-24 -right-24 w-96 h-96 bg-brand-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute top-1/2 -left-24 w-80 h-80 bg-accent-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-50 border border-brand-100 text-brand-600 text-xs font-semibold mb-6">
+                    <span class="w-2 h-2 rounded-full bg-brand-600 animate-pulse"></span>
+                    Available for: Store Superintendent | Operations | Administration | IT & Digital
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-slate-900 tracking-tight leading-tight">
+                    FAUJIAH DECIKA
+                </h1>
+                <p class="mt-4 text-xl sm:text-2xl font-medium text-slate-600">
+                    Fresh Graduate S1 Teknik Informatika <span class="text-slate-300">|</span> <span class="gradient-text">Project Management & Administration</span>
+                </p>
+                <p class="mt-6 text-base text-slate-600 leading-relaxed max-w-2xl">
+                    Lulusan Universitas Maritim Raja Ali Haji (IPK 3,52) dengan keahlian komprehensif dalam administrasi, pengelolaan data, pengembangan proyek digital, serta perancangan UI/UX.
+                </p>
+
+                <!-- Quick Info Chips -->
+                <div class="mt-8 flex flex-wrap gap-4 text-xs font-medium text-slate-600">
+                    <span class="flex items-center gap-1.5 px-3 py-1.5 bg-white rounded-lg border border-slate-200 shadow-sm">
+                        <i class="fa-solid fa-location-dot text-brand-600"></i> Batam, Kepulauan Riau
+                    </span>
+                    <a href="mailto:faujiahdecika@gmail.com" class="flex items-center gap-1.5 px-3 py-1.5 bg-white rounded-lg border border-slate-200 shadow-sm hover:border-brand-500 transition">
+                        <i class="fa-solid fa-envelope text-brand-600"></i> faujiahdecika@gmail.com
+                    </a>
+                    <a href="https://www.linkedin.com/in/faujiahdecika/" target="_blank" class="flex items-center gap-1.5 px-3 py-1.5 bg-white rounded-lg border border-slate-200 shadow-sm hover:border-brand-500 transition">
+                        <i class="fa-brands fa-linkedin text-brand-600"></i> LinkedIn Profile
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Profile Section -->
+    <section id="profile" class="py-16 bg-white border-y border-slate-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                <div class="lg:col-span-4">
+                    <span class="text-xs font-bold uppercase tracking-wider text-brand-600">01 — Profile</span>
+                    <h2 class="text-3xl font-serif font-bold text-slate-900 mt-1">Profil Profesional</h2>
+                    <p class="mt-3 text-sm text-slate-500">Kombinasi antara analitis data, kedisiplinan administrasi, dan inovasi teknologi digital.</p>
+                </div>
+                <div class="lg:col-span-8 space-y-4 text-slate-600 leading-relaxed text-sm sm:text-base">
+                    <p>
+                        Fresh Graduate S1 Teknik Informatika Universitas Maritim Raja Ali Haji dengan IPK 3,52, memiliki pengalaman dalam administrasi, pengelolaan data, pengembangan proyek digital, UI/UX Design, serta Project/Product Management.
+                    </p>
+                    <p>
+                        Memiliki pengalaman sebagai Staff Administrasi/Magang di Dinas Sosial Kota Tanjungpinang, dengan aktivitas yang mencakup administrasi harian, pengelolaan data, pengarsipan, penyusunan laporan, serta keterlibatan dalam perancangan sistem berbasis website. Selain pengalaman administrasi, memiliki pengalaman dalam program Studi Independen Web Development yang melibatkan pengerjaan beberapa proyek secara kolaboratif dengan tanggung jawab sebagai Project/Product Manager (Hustler) dan UI/UX Designer (Hipster).
+                    </p>
+                    <p>
+                        Terbiasa bekerja secara terstruktur, mengelola informasi dan data, melakukan koordinasi dalam tim, menyusun kebutuhan proyek, memantau proses pekerjaan, serta mencari solusi terhadap permasalahan yang ditemukan.
+                    </p>
+                    <div class="p-4 bg-brand-50/60 rounded-xl border border-brand-100 text-brand-900 text-sm">
+                        <i class="fa-solid fa-bullseye text-brand-600 mr-2"></i>
+                        <strong>Ketertarikan Karir:</strong> Memiliki ketertarikan untuk berkembang pada bidang operasional, administrasi, store management, warehouse management, dan supervisory, serta siap mempelajari proses bisnis dan standar operasional perusahaan secara lebih mendalam.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Competencies Section -->
+    <section id="competencies" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-wider text-brand-600">02 — Skills</span>
+                <h2 class="text-3xl font-serif font-bold text-slate-900 mt-1">Core Competencies</h2>
+                <p class="mt-2 text-sm text-slate-500">Kemampuan utama yang siap diterapkan dalam bidang operasional maupun manajemen proyek.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div class="glass-card p-6 rounded-2xl shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-600 flex items-center justify-center mb-5 text-xl">
+                        <i class="fa-solid fa-folder-tree"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-lg mb-3">Administration & Data</h3>
+                    <ul class="space-y-2 text-xs sm:text-sm text-slate-600">
+                        <li>• Administrative Management</li>
+                        <li>• Data Entry & Validation</li>
+                        <li>• Document & Archive Mgmt</li>
+                        <li>• Report Preparation</li>
+                        <li>• Data Organization</li>
+                        <li>• Microsoft Office</li>
+                    </ul>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="glass-card p-6 rounded-2xl shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-xl bg-accent-500/10 text-accent-600 flex items-center justify-center mb-5 text-xl">
+                        <i class="fa-solid fa-list-check"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-lg mb-3">Project & Management</h3>
+                    <ul class="space-y-2 text-xs sm:text-sm text-slate-600">
+                        <li>• Project Planning & Monitoring</li>
+                        <li>• Task & Team Coordination</li>
+                        <li>• Requirement Analysis</li>
+                        <li>• Problem Solving</li>
+                        <li>• Leadership & Communication</li>
+                        <li>• Agile/Scrum Fundamentals</li>
+                    </ul>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="glass-card p-6 rounded-2xl shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center mb-5 text-xl">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-lg mb-3">Digital & Technology</h3>
+                    <ul class="space-y-2 text-xs sm:text-sm text-slate-600">
+                        <li>• UI/UX Design & Wireframing</li>
+                        <li>• Figma Prototyping</li>
+                        <li>• User Research & Journey</li>
+                        <li>• System Analysis</li>
+                        <li>• HTML5 & Web Fundamentals</li>
+                    </ul>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="glass-card p-6 rounded-2xl shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center mb-5 text-xl">
+                        <i class="fa-solid fa-user-check"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-lg mb-3">Work Characteristics</h3>
+                    <ul class="space-y-2 text-xs sm:text-sm text-slate-600">
+                        <li>• Detail-oriented & Organized</li>
+                        <li>• Fast Learner & Adaptable</li>
+                        <li>• Responsible & Reliable</li>
+                        <li>• Analytical Thinking</li>
+                        <li>• Individual & Team Player</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-16 bg-white border-b border-slate-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                <span class="text-xs font-bold uppercase tracking-wider text-brand-600">03 — Education</span>
+                <h2 class="text-3xl font-serif font-bold text-slate-900 mt-1 mb-8">Pendidikan Formal</h2>
+                
+                <div class="p-6 bg-slate-50 rounded-2xl border border-slate-200 flex flex-col md:flex-row justify-between gap-6">
+                    <div>
+                        <span class="text-xs font-semibold px-2.5 py-1 bg-brand-100 text-brand-700 rounded-md">S1 Teknik Informatika</span>
+                        <h3 class="text-xl font-bold text-slate-900 mt-2">UNIVERSITAS MARITIM RAJA ALI HAJI</h3>
+                        <p class="text-sm font-semibold text-brand-600 mt-1">IPK: 3.52 / 4.00</p>
+                        <p class="mt-4 text-xs text-slate-500 font-medium">Bidang Studi Utama:</p>
+                        <div class="flex flex-wrap gap-2 mt-2">
+                            <span class="px-2.5 py-1 bg-white border border-slate-200 rounded-md text-xs text-slate-600">UI/UX Design</span>
+                            <span class="px-2.5 py-1 bg-white border border-slate-200 rounded-md text-xs text-slate-600">Data Processing</span>
+                            <span class="px-2.5 py-1 bg-white border border-slate-200 rounded-md text-xs text-slate-600">Information Systems</span>
+                            <span class="px-2.5 py-1 bg-white border border-slate-200 rounded-md text-xs text-slate-600">Project Development</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Experience Section -->
+    <section id="experience" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12">
+                <span class="text-xs font-bold uppercase tracking-wider text-brand-600">04 & 05 — Work & Training</span>
+                <h2 class="text-3xl font-serif font-bold text-slate-900 mt-1">Pengalaman Profesional</h2>
+            </div>
+
+            <div class="space-y-12">
+                <!-- Experience Item 1 -->
+                <div class="bg-white rounded-2xl border border-slate-200/80 p-6 sm:p-8 shadow-sm">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between pb-6 border-b border-slate-100 gap-2">
+                        <div>
+                            <span class="text-xs font-bold text-brand-600 uppercase tracking-wide">Staff Administrasi / Magang</span>
+                            <h3 class="text-2xl font-bold text-slate-900">DINAS SOSIAL KOTA TANJUNGPINANG</h3>
+                        </div>
+                        <span class="px-3 py-1 bg-slate-100 text-slate-600 rounded-full text-xs font-medium self-start md:self-auto">
+                            Juli 2024 – Agustus 2024
+                        </span>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 mt-6">
+                        <div class="lg:col-span-8 space-y-4">
+                            <h4 class="font-semibold text-sm text-slate-900 uppercase tracking-wider">Tanggung Jawab Utama:</h4>
+                            <ul class="space-y-2 text-sm text-slate-600">
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-check text-brand-500 mt-1 text-xs"></i>
+                                    <span>Melakukan administrasi dan pengelolaan data untuk mendukung kegiatan operasional harian.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-check text-brand-500 mt-1 text-xs"></i>
+                                    <span>Membantu proses pengarsipan dan pengorganisasian dokumen resmi secara terstruktur.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-check text-brand-500 mt-1 text-xs"></i>
+                                    <span>Melakukan pengelolaan serta pemeriksaan/rekap data (seperti Jamkesda) agar akurat.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-check text-brand-500 mt-1 text-xs"></i>
+                                    <span>Membantu penyusunan laporan, presentasi proyek, dan koordinasi antar bidang.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-check text-brand-500 mt-1 text-xs"></i>
+                                    <span>Berkontribusi aktif dalam perancangan sistem digital (SIPDA) pendaftaran PBPU Pemda.</span>
+                                </li>
+                            </ul>
+
+                            <div class="pt-4">
+                                <h4 class="font-semibold text-xs text-slate-500 uppercase tracking-wider mb-2">Relevansi Bidang Operasional / Store Superintendent:</h4>
+                                <p class="text-xs text-slate-600 bg-slate-50 p-3 rounded-lg border border-slate-200">
+                                    Membangun ketelitian tinggi, kontrol data, penyusunan laporan berkala, monitoring tugas, dan koordinasi lintas pihak yang sangat sejalan dengan operasional bisnis.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- GDrive Link Box for Photos -->
+                        <div class="lg:col-span-4 bg-slate-50 p-6 rounded-xl border border-slate-200 flex flex-col justify-between">
+                            <div>
+                                <div class="w-10 h-10 rounded-lg bg-brand-100 text-brand-600 flex items-center justify-center mb-3">
+                                    <i class="fa-brands fa-google-drive text-lg"></i>
+                                </div>
+                                <h4 class="font-bold text-slate-900 text-sm">Dokumentasi Foto Kegitan</h4>
+                                <p class="text-xs text-slate-500 mt-1">
+                                    Lihat foto dokumentasi rekap data, presentasi proyek, dan foto bersama di Google Drive resmi.
+                                </p>
+                            </div>
+                            <a href="https://drive.google.com/drive/folders/1btgT4ajLAgyxWwSNQOzKrKQ_OgAezw7v?usp=sharing" target="_blank" class="mt-6 inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-brand-600 hover:bg-brand-700 text-white text-xs font-semibold rounded-lg shadow-sm transition">
+                                <i class="fa-solid fa-folder-open"></i> Buka Foto di GDrive
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience Item 2 -->
+                <div class="bg-white rounded-2xl border border-slate-200/80 p-6 sm:p-8 shadow-sm">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between pb-6 border-b border-slate-100 gap-2">
+                        <div>
+                            <span class="text-xs font-bold text-brand-600 uppercase tracking-wide">Studi Independen — Web Development</span>
+                            <h3 class="text-2xl font-bold text-slate-900">INFINITE LEARNING / PT KINEMA SYSTEMAS MULTIMEDIA</h3>
+                        </div>
+                        <span class="px-3 py-1 bg-slate-100 text-slate-600 rounded-full text-xs font-medium self-start md:self-auto">
+                            Agustus 2023 – Desember 2023
+                        </span>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 mt-6">
+                        <div class="lg:col-span-8 space-y-4">
+                            <div class="flex flex-wrap gap-2 mb-2">
+                                <span class="px-2.5 py-1 bg-purple-50 text-purple-700 font-semibold text-xs rounded-md border border-purple-200">Role: Project/Product Manager (Hustler)</span>
+                                <span class="px-2.5 py-1 bg-blue-50 text-blue-700 font-semibold text-xs rounded-md border border-blue-200">Role: UI/UX Designer (Hipster)</span>
+                            </div>
+                            <h4 class="font-semibold text-sm text-slate-900 uppercase tracking-wider">Tanggung Jawab Utama:</h4>
+                            <ul class="space-y-2 text-sm text-slate-600">
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-check text-brand-500 mt-1 text-xs"></i>
+                                    <span>Mengidentifikasi kebutuhan pengguna, problem statement, serta tujuan produk digital.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-check text-brand-500 mt-1 text-xs"></i>
+                                    <span>Membagi dan memonitor task anggota tim, mengordinasikan timeline dan milestone proyek.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-check text-brand-500 mt-1 text-xs"></i>
+                                    <span>Membuat Research Organizer, Wireframe, dan High-Fidelity UI/UX Prototype menggunakan Figma.</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- GDrive Link Box for Photos -->
+                        <div class="lg:col-span-4 bg-slate-50 p-6 rounded-xl border border-slate-200 flex flex-col justify-between">
+                            <div>
+                                <div class="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-600 flex items-center justify-center mb-3">
+                                    <i class="fa-brands fa-google-drive text-lg"></i>
+                                </div>
+                                <h4 class="font-bold text-slate-900 text-sm">Dokumentasi Proyek Studi Independen</h4>
+                                <p class="text-xs text-slate-500 mt-1">
+                                    Akses seluruh dokumentasi Research Organizer (Micro & Massive) dan Desain UI/UX Prototype.
+                                </p>
+                            </div>
+                            <a href="https://drive.google.com/drive/folders/1tG2ZOyY0u8E6xax-FC5hMTEeVgjqhPSW?usp=sharing" target="_blank" class="mt-6 inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-semibold rounded-lg shadow-sm transition">
+                                <i class="fa-solid fa-folder-open"></i> Buka Foto di GDrive
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-wider text-brand-600">06-10 — Portfolio Projects</span>
+                <h2 class="text-3xl font-serif font-bold text-slate-900 mt-1">Portofolio Proyek</h2>
+                <p class="text-sm text-slate-500 mt-2">Daftar proyek digital, riset, dan pengembangan sistem yang pernah ditangani.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Project 01 -->
+                <div class="border border-slate-200 rounded-2xl p-6 bg-slate-50/50 hover:bg-white hover:shadow-lg transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-bold text-brand-600 uppercase">Project 01</span>
+                            <span class="px-2 py-0.5 bg-slate-200 text-slate-700 text-xs rounded">Digital System</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">SIPDA — PBPU Registration</h3>
+                        <p class="text-xs text-slate-500 mb-4">Dinas Sosial Kota Tanjungpinang</p>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                            Konsep sistem pendaftaran dan verifikasi PBPU berbasis web untuk mempermudah alur pendaftaran, mengurangi risiko kesalahan input data, dan meningkatkan efisiensi monitoring.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-200">
+                        <p class="text-xs font-semibold text-slate-700 mb-2">Key Skills:</p>
+                        <div class="flex flex-wrap gap-1">
+                            <span class="text-[10px] bg-white border px-2 py-0.5 rounded text-slate-600">System Analysis</span>
+                            <span class="text-[10px] bg-white border px-2 py-0.5 rounded text-slate-600">Dashboard UI</span>
+                            <span class="text-[10px] bg-white border px-2 py-0.5 rounded text-slate-600">Data Mgmt</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 02 -->
+                <div class="border border-slate-200 rounded-2xl p-6 bg-slate-50/50 hover:bg-white hover:shadow-lg transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-bold text-brand-600 uppercase">Project 02</span>
+                            <span class="px-2 py-0.5 bg-slate-200 text-slate-700 text-xs rounded">Education Platform</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">EduTechMinds</h3>
+                        <p class="text-xs text-slate-500 mb-4">Role: UI/UX Designer (Hipster)</p>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                            Platform digital yang menghubungkan guru honorer & lulusan pendidikan dengan pengguna jasa pendidikan untuk memperluas peluang penghasilan tambahan.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-200">
+                        <p class="text-xs font-semibold text-slate-700 mb-2">Key Skills:</p>
+                        <div class="flex flex-wrap gap-1">
+                            <span class="text-[10px] bg-white border px-2 py-0.5 rounded text-slate-600">UI/UX Design</span>
+                            <span class="text-[10px] bg-white border px-2 py-0.5 rounded text-slate-600">User Research</span>
+                            <span class="text-[10px] bg-white border px-2 py-0.5 rounded text-slate-600">Figma</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 03 -->
+                <div class="border border-slate-200 rounded-2xl p-6 bg-slate-50/50 hover:bg-white hover:shadow-lg transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-bold text-brand-600 uppercase">Project 03</span>
+                            <span class="px-2 py-0.5 bg-slate-200 text-slate-700 text-xs rounded">Transportation</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Anti Traffic Jam (ATJ)</h3>
+                        <p class="text-xs text-slate-500 mb-4">Role: UI/UX Designer (Hipster)</p>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                            Aplikasi informasi lalu lintas real-time, rute alternatif, serta fitur pelaporan kondisi/kerusakan jalan bagi pengemudi dan armada kurir.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-200">
+                        <p class="text-xs font-semibold text-slate-700 mb-2">Key Skills:</p>
+                        <div class="flex flex-wrap gap-1">
+                            <span class="text-[10px] bg-white border px-2 py-0.5 rounded text-slate-600">Prototyping</span>
+                            <span class="text-[10px] bg-white border px-2 py-0.5 rounded text-slate-600">User Flow</span>
+                            <span class="text-[10px] bg-white border px-2 py-0.5 rounded text-slate-600">Problem Solving</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 04 -->
+                <div class="border border-slate-200 rounded-2xl p-6 bg-slate-50/50 hover:bg-white hover:shadow-lg transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-bold text-brand-600 uppercase">Project 04</span>
+                            <span class="px-2 py-0.5 bg-slate-200 text-slate-700 text-xs rounded">Event & Venue</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Placify</h3>
+                        <p class="text-xs text-slate-500 mb-4">Role: Product Manager (Hustler)</p>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                            Platform pencarian dan rekomendasi venue acara bagi organisasi mahasiswa/penyelenggara acara berdasarkan kriteria kapasitas, anggaran, dan fasilitas.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-200">
+                        <p class="text-xs font-semibold text-slate-700 mb-2">Key Skills:</p>
+                        <div class="flex flex-wrap gap-1">
+                            <span class="text-[10px] bg-white border px-2 py-0.5 rounded text-slate-600">Product Mgmt</span>
+                            <span class="text-[10px] bg-white border px-2 py-0.5 rounded text-slate-600">Team Coordination</span>
+                            <span class="text-[10px] bg-white border px-2 py-0.5 rounded text-slate-600">Leadership</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 05 (Thesis) -->
+                <div class="border border-slate-200 rounded-2xl p-6 bg-slate-50/50 hover:bg-white hover:shadow-lg transition lg:col-span-2 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-bold text-brand-600 uppercase">Project 05 — Skripsi / Academic Research</span>
+                            <span class="px-2 py-0.5 bg-brand-100 text-brand-700 text-xs rounded font-semibold">Data Science</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Implementasi Model Hybrid ARIMAX-LSTM</h3>
+                        <p class="text-xs text-slate-500 mb-3">Prediksi Tinggi Gelombang Laut di Laut Natuna Utara</p>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                            Mengembangkan model prediksi time-series gabungan (ARIMAX-LSTM) dengan menganalisis variabel eksternal kecepatan angin untuk meningkatkan akurasi estimasi gelombang laut.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-200">
+                        <p class="text-xs font-semibold text-slate-700 mb-2">Key Skills:</p>
+                        <div class="flex flex-wrap gap-1">
+                            <span class="text-[10px] bg-white border px-2 py-0.5 rounded text-slate-600">Data Analysis</span>
+                            <span class="text-[10px] bg-white border px-2 py-0.5 rounded text-slate-600">Time-Series Modeling</span>
+                            <span class="text-[10px] bg-white border px-2 py-0.5 rounded text-slate-600">Analytical Thinking</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-wider text-accent-500">14 — Sertifikasi</span>
+                <h2 class="text-3xl font-serif font-bold mt-1">Sertifikat Resmi</h2>
+                <p class="text-sm text-slate-400 mt-2">Akses dokumen sertifikat kelulusan program & pengalaman kerja resmi via Drive.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Cert 1 -->
+                <div class="bg-slate-800/80 border border-slate-700 p-6 rounded-2xl flex flex-col justify-between hover:border-slate-500 transition">
+                    <div>
+                        <div class="w-10 h-10 rounded-lg bg-blue-500/20 text-blue-400 flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-award text-xl"></i>
+                        </div>
+                        <span class="text-xs font-medium text-slate-400">No: 1206/IL-SIB/I/2024</span>
+                        <h3 class="text-lg font-bold mt-1">Sertifikat Studi Independen MSIB Batch 5</h3>
+                        <p class="text-xs text-slate-400 mt-1">Web Development — Infinite Learning (PT Kinema Systernas Multimedia)</p>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1B7BK4VUTct0dtr5hAcevYkf8NK7OGO6q/view?usp=sharing" target="_blank" class="mt-6 inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-brand-600 hover:bg-brand-500 text-white text-xs font-semibold rounded-xl transition">
+                        <i class="fa-solid fa-file-pdf"></i> Lihat Sertifikat (Google Drive)
+                    </a>
+                </div>
+
+                <!-- Cert 2 -->
+                <div class="bg-slate-800/80 border border-slate-700 p-6 rounded-2xl flex flex-col justify-between hover:border-slate-500 transition">
+                    <div>
+                        <div class="w-10 h-10 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center mb-4">
+                            <i class="fa-solid fa-certificate text-xl"></i>
+                        </div>
+                        <span class="text-xs font-medium text-slate-400">Predikat A (Sangat Baik)</span>
+                        <h3 class="text-lg font-bold mt-1">Sertifikat Kerja Praktik / Magang</h3>
+                        <p class="text-xs text-slate-400 mt-1">Dinas Sosial Kota Tanjungpinang</p>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1fWLG3zxa3qQ9yo-TUDGzH1ci3d4IuDiW/view?usp=sharing" target="_blank" class="mt-6 inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold rounded-xl transition">
+                        <i class="fa-solid fa-file-pdf"></i> Lihat Sertifikat (Google Drive)
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center">
+                <span class="text-xs font-bold uppercase tracking-wider text-brand-600">15 — Contact</span>
+                <h2 class="text-3xl font-serif font-bold text-slate-900 mt-1">Mari Bekerja Sama</h2>
+                <p class="text-sm text-slate-600 mt-3">
+                    Saya terbuka untuk kesempatan karir di posisi Store Superintendent, Operations, Administration, maupun IT Management.
+                </p>
+
+                <div class="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <a href="mailto:faujiahdecika@gmail.com" class="p-4 rounded-xl border border-slate-200 hover:border-brand-500 transition flex flex-col items-center">
+                        <i class="fa-solid fa-envelope text-brand-600 text-xl mb-2"></i>
+                        <span class="text-xs font-semibold text-slate-500">Email</span>
+                        <span class="text-xs font-bold text-slate-800 mt-1 truncate max-w-full">faujiahdecika@gmail.com</span>
+                    </a>
+                    <a href="https://wa.me/6283110060196" target="_blank" class="p-4 rounded-xl border border-slate-200 hover:border-brand-500 transition flex flex-col items-center">
+                        <i class="fa-brands fa-whatsapp text-emerald-600 text-xl mb-2"></i>
+                        <span class="text-xs font-semibold text-slate-500">WhatsApp</span>
+                        <span class="text-xs font-bold text-slate-800 mt-1">+62 831-1006-0196</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/faujiahdecika/" target="_blank" class="p-4 rounded-xl border border-slate-200 hover:border-brand-500 transition flex flex-col items-center">
+                        <i class="fa-brands fa-linkedin text-blue-600 text-xl mb-2"></i>
+                        <span class="text-xs font-semibold text-slate-500">LinkedIn</span>
+                        <span class="text-xs font-bold text-slate-800 mt-1">faujiahdecika</span>
+                    </a>
+                </div>
+
+                <div class="mt-12 text-xs text-slate-400">
+                    <p>📍 Perumahan Akasia Garden Blok A2 No.12A, Kota Batam, Sekupang, Kepulauan Riau</p>
+                    <p class="mt-4">© 2026 Faujiah Decika. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
